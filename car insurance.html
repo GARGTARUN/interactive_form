@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <meta charset='utf-8'>
+  <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+  <meta content='width=device-width, initial-scale=1' name='viewport'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<div class="container">
+    
+
+
+<div id='tab'>
+<div class="text-center">
+<div class="form-group row">
+<div class="col-sm-12">
+
+<h3  style="color:#1f56b6;font-weight: 700 ;display:inline-block; ">Save upto 80%* </h3 >
+<h3 style="color:#3d79e2;display: inline-block; "> on Car Insurance </h3></br>
+</div></div>
+
+
+<div class="form-group row">
+<div class="col-sm-12">
+<div class="radio-inline1">
+</br>
+<input id='radio_2' type="radio" value="Renew Existing Car Insurance"  name="type" onchange="typeselect()" onclick="typeselect()"/>
+<label for="radio_2" >Renew Existing Car Insurance</label>
+</br></br>
+<input  id='radio_1' type="radio" value="My Car Insurance Policy Expired" name="type" onchange="typeselect()" onclick="typeselect()"/>
+<label for="radio_1" >My Car Insurance Policy Expired</label>
+</br></br>
+<input id='radio_3' type="radio" value="Buying Brand New Car"  name="type" onchange="typeselect()" onclick="typeselect()"  />
+<label for="radio_3" >Buying Brand New Car</label>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</br>
+
+    
+
+
+
+<form id="foo" autocomplete="off">
+
+
+<div id= "currentpage">
+<div class="form-group row">
+    <div class="col-sm-12">
+<label id="lab1" for="radio_2" ><button onclick="showtab()" class="button2"><i class="fas fa-chevron-left"></i></button>Renew Existing Car Insurance</label>
+<label id="lab2" for="radio_1" ><button onclick="showtab()" class="button2"><i class="fas fa-chevron-left"></i></button>My Car Insurance Policy Expired</label>
+<label id="lab3" for="radio_3" ><button onclick="showtab()" class="button2"><i class="fas fa-chevron-left"></i></button>Buying Brand New Car</label>
+    </div></div></div>
+    
+
+
+
+
+
+<div id="details2" style="display: inline;">
+
+
+
+
+<div id="1_2" >
+    <div class="form-group row" >
+    <div class="col-sm-12">
+       <div class="input-group-prepend">
+          <div class="input-group-text"><i class="fa fa-car" aria-hidden="true"></i></div>
+      <input type="text" class="form-control" id="carnum" placeholder="Enter Car Number: (Eg. MP13CA2234)" name="carnum" maxlength="10">
+    </div></div>
+    </div></div>
+
+
+
+<div  id="1_1">
+<div class="form-group row">
+<label for="claimppolicy" class="col-sm-12 ">Have you filed a claim in your previous policy?</label>
+</div>
+<div class="form-group row">
+<div class="col-sm-12">
+  <p><label  class="one"  for="yes">
+          <input id="yes" name="ynclaim" type="radio" value="Yes" onclick="show_name()"  onchange="show_name()" />
+          <span>Yes, I Have</span>
+        </label>
+      </p>
+      <p>
+               <label class="one"  for="no">
+          <input id="no" name="ynclaim" type="radio" value="No" onclick="show_name()"  onchange="show_name()"/>
+          <span>No,I Haven't</span>
+</label>
+</p>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+
+
+<div id="details1" style="display: inline;">
+
+
+
+<div id= "carnum2">
+<div class="form-group row">
+    <div class="col-sm-12">
+      <div class="input-group-prepend">
+          <div class="input-group-text"><i class="fa fa-car" aria-hidden="true"></i></div>
+      <input type="text" class="form-control" id="carnum1" placeholder="Enter Car Number: (Eg. MP13CA2234)" name="carnum1" maxlength="10">
+    </div></div></div>
+    </div>
+
+
+
+<div class="form-group row">
+    <label for="covertype" class="col-sm-12 col-form-label">Choose Cover for your Car</label>
+</div>
+
+
+
+
+
+<div class="form-group row">
+
+<div class="col-sm-12">
+         <label class="one" for="type1">
+          <input id="type1" name="covertype" type="radio" value="1 Year Comprehensive Policy" onclick="showque()" />
+          <span>1 Year Comprehensive Policy </span></br>
+          <span id= "spandetails" style="font-style:italic;">&nbsp;&nbsp;&nbsp;&nbsp;Cover Damages to your Car and Third Party for 1 Year</span>
+        </label>
+
+         <label class="one" for="type2">
+          <input id="type2" name="covertype" type="radio" value="1 Year Third Party Policy" onclick="hideque()" />
+          <span>1 Year Third Party Policy</span></br>
+          <span id= "spandetails" style="font-style:italic ;">&nbsp;&nbsp;&nbsp;&nbsp;Cover Damages Only to Third Party for 1 Year</span>
+        </label>
+</div>
+</div>
+
+
+
+<div id="que">
+<div class="form-group row">
+    <label for="yes1" class="col-sm-12 col-form-label">Do you still have Expired / Past Insurance Policy?</label>
+  </div>
+   <div class="form-group row">
+
+<div class="col-sm-12">
+  <p>
+         <label class="one" for="yes1">
+          <input id="yes1" name="ynexp" type="radio" value="Yes" onclick="showexp()" />
+          <span>Yes, I Have</span>
+        </label>
+      </p>
+      <p>
+        <label class="one"  for="no1">
+        <input id="no1" name="ynexp" type="radio" value="No" onclick="hideexp()"/>
+          <span>No,I Don't</span>
+</label>
+</p>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="expdate">
+<div class="form-group row">
+<label for="expdate1" class="col-sm-6 col-form-label">Select Expiry Date of your Past Policy</label>
+    <div class="col-sm-6">
+      <input type="date" class="form-control" id="expdate1" placeholder="Select Expiry Date of your Past Policy" name="expdate1" onclick="show_name()" onchange="show_name()">
+      <span class='required' id="errordate"></span>
+    </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+
+<div id="details3" style="display: inline;">
+
+<div id="rtodiv">
+  <div class="form-group row">
+
+<span id="sid"><i class="fa fa-search" aria-hidden="true"></i></span>
+    <div class="col-sm-11">
+      <div class="autocomplete">
+
+    <input class='form-control' id="rto" type="text" name="rto" placeholder="Search RTO" onclick="showbranddiv()" onchange="showbranddiv()">
+  </div>
+</div>
+  </div>
+    </div>
+
+
+<div id="branddiv">
+<div class="form-group row">
+  <span id="sid"><i class="fa fa-search" aria-hidden="true"></i></span>
+
+    <div class="col-sm-11">
+      <div class="autocomplete">
+    <input class='form-control' id="myInput" type="text" name="brand" placeholder="Search Car Brand" onclick="showmoddiv()" onchange="showmoddiv()">
+  </div>
+    </div>
+    </div></div>
+
+
+<div id="moddiv">
+<div class="form-group row">
+<!-- <label for="carmod" class="col-sm-5 col-form-label">Enter Model</label> -->
+    <div class="col-sm-12">
+          <div class="input-group-prepend">
+          <div class="input-group-text"><i class="fa fa-car" aria-hidden="true"></i></div>
+      <input type="text" class="form-control" id="carmod" placeholder="Enter Car Model" name="carmod" onclick="showfueldiv()" onchange="showfueldiv()">
+    </div>
+    </div></div></div>
+
+
+
+<div id="fueldiv">
+<div class="form-group row">
+<!--     <label for="fueltype" class="col-sm-6 col-form-label">Fuel Type?</label> -->
+    
+    <div class="col-sm-12">
+      <div class="input-group-prepend">
+          <div class="input-group-text"><i class='fas fa-gas-pump'></i></i></div>
+      <select class="form-control" id="fueltype" name="fueltype" onclick="show_name()" onchange="show_name()">
+        <option value="" selected="" disabled="">Select</option>
+        <option value="Petrol">Petrol</option>
+        <option value="Diesel">Diesel</option>
+        <option value="Petrol +CNG/LPG">Petrol +CNG/LPG</option>
+        <option value="Electric (Battery)">Electric (Battery)</option>
+</select></div>
+</div>
+</div></div>
+
+
+
+
+</div>
+
+
+
+
+<div  id="fname">
+<div class="form-group row">
+    <div class="col-sm-12">
+       <div class="input-group-prepend">
+      <span class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></i></span>
+      <input type="text" class="form-control" id="name" placeholder="Enter Full Name" name="name"  onclick ="showcontact()" onchange ="showcontact()" required>
+    </div>
+</div>
+</div>
+</div>
+
+<div id="contact">
+<div class="form-group row" >
+    <div class="col-sm-12">
+      <div class="input-group-prepend">
+      <span class="input-group-text"><i class="fa fa-mobile" aria-hidden="true"></i></span>
+      <input type="tel" class="form-control" maxlength=10  pattern="^\d{10}$" id="mob" placeholder="Mobile Number" name="mobile" onclick="showsubmit()" onchange ="showsubmit()" required>
+    </div>
+  </div>
+</div></div>
+
+
+ <input type="hidden" id="isfile" name="isfile" value="No">
+
+
+
+<div id="submitdiv">
+
+<div class="form-group row" >
+    <div class="col-sm-12">
+      <div class="input-group-prepend">
+          <div class="input-group-text"><i class="fas fa-envelope "></i></div>
+        
+      <input id="email" type="email" class="form-control" name="email" placeholder="Email (Optional)" onclick="showsubmit()">
+    </div>
+  </div></div>
+
+
+
+
+<div class="form-group row" >
+<h4 style="text-align:center; color:#497edb"> Get Quick Quotes</h4>
+</div>
+<div class="form-group row" >
+
+  <div class="col-sm-6">
+<label class="buttonupload" onclick="Uploadfun()"><i class="fa fa-upload"></i></br><p id="uploadlab">Upload Past Policy</p></label>
+</div>
+
+   
+  <div class="col-sm-6">
+        <button type="button"  onclick="Whatsapp()" class="button buttonwhatsapp"><i class="fa fa-whatsapp"></i>
+</br>Chat on Whatsapp</button>
+      </div>
+
+
+  </div>
+
+
+<div class="form-group row" >
+  <div class="col-sm-12">
+<button type="submit" class="button button1" id="submit_key" >Get Quotes</button>
+</div>
+</div>
+
+
+</div>
+</form>
+
+
+
+
+
+
+
+
+
+
+<div>
+  <!-- Button to Open the Modal -->
+  <button type="button" id="uploadkey" class="buttonupload" data-toggle="modal" data-target="#myModal" style="display: none;">
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+    
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title" style="color:#1f56b6;">Let us check what your past Car Insurance Covered?</h4>
+          <button type="button" class="close" data-dismiss="modal" id='popup' >&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div>
+<div class="form-group row">
+
+<div class="col-sm-12">
+
+<p style="color:#3d79e2; ">Please take photo of your existing car insurance policy which includes your vehicle number, premium and other coverage information.</p></br>
+</div></div>
+
+<form  id="form" method="post">
+<div class="text-center">
+<div class="form-group row">
+
+  <div class="col-sm-12" id='filediv'>
+    <label for="files"><i class="fa fa-cloud-upload"></i></label></br>
+<label for="files" id="filenamelab">Click Here To Upload...</label>
+<div id="data"></div>
+<input name="file" id="files" type="file">
+  </div></div>
+</div>
+<div class="form-group row">
+<div class='col-sm-4' id="uploadmod">
+<button type="submit" class="button buttonupload" formaction="https://script.google.com/macros/s/AKfycbzv5FxkIAOR15qONkwxARp2aR6ou9WmYsEkCkr9CMNDFuoNb1KW/exec">Upload</button>
+</div>
+<div class='col-sm-8'>
+<a href="https://wa.me/918881880205?text=I'm%20interested%20in%20car%20Insurance">
+Skip, Let's Chat on Whatsapp  <i class="fa fa-whatsapp" id="secwhat"></i></a>
+</div>
+
+</div>
+</div>
+</div>
+
+</form>
+
+<script>
+    $('#files').on("change", function() {
+        var file = this.files[0];
+        var fr = new FileReader();
+        fr.fileName = file.name;
+        fr.onload = function(e) {
+            e.target.result
+            html = '<input type="hidden" name="data" value="' + e.target.result.replace(/^.*,/, '') + '" >';
+            html += '<input type="hidden" name="mimetype" value="' + e.target.result.match(/^.*(?=;)/)[0] + '" >';
+            html += '<input type="hidden" name="filename" value="' + e.target.fileName + '" >';
+            $("#data").empty().append(html);
+        }
+        fr.readAsDataURL(file);
+    });
+
+
+document.querySelector("#files").onchange = function(){
+  document.querySelector("#filenamelab").textContent = this.files[0].name;
+}
+
+    </script>
+
+
+
+
+        </div>
+        
+        <!-- Modal footer -->
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+<h3 id="success-msg" style="text-align: center !important; margin-top:190px !important; display:none; color:#474EBB"> Thank You! Will get back to you soon.</h3>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+
+var request;
+$("#foo").on('submit',function(event){
+
+    if (request) {
+        request.abort();
+    }
+    var $form = $(this);
+    var $inputs = $form.find("input, select, button, textarea");
+    var serializedData = $form.serialize();
+
+    $inputs.prop("disabled", true);
+    request = $.ajax({
+        url:"https://script.google.com/macros/s/l/exec",
+        type: "post",
+        data: serializedData
+    });
+    request.done(function (response, textStatus, jqXHR){
+        console.log(response);
+        console.log(textStatus);
+        console.log(jqXHR);
+           $('#foo').hide();
+    $('#success-msg').show();
+ 
+    });
+
+    request.fail(function (jqXHR, textStatus, errorThrown){
+        console.error(
+            "The following error occurred: "+
+            textStatus, errorThrown
+        );
+    });
+
+    request.always(function () {
+        // Reenable the inputs
+        $inputs.prop("disabled", false);
+    });
+    event.preventDefault();
+});
+
+
+
+</script>
+</div>
+</html>
+
+
+
+<style>
+
+label.one{
+  margin-left: 20px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+form .form-control::-webkit-input-placeholder { 
+  color: #497edb;
+}
+
+form .form-control::-moz-placeholder {
+  color: #497edb;
+}
+form .form-control:-ms-input-placeholder {
+  color: #497edb;
+}
+form .form-control:placeholder {
+  color: #497edb;
+}
+.fa-cloud-upload:before {
+    content: "\f0ee";
+    font-size: 100px;
+}
+
+.modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 2.5rem;
+}
+input[type="file"] {
+  opacity: 0;
+  width: 0%;
+  position: fixed;
+}
+.modal-backdrop
+{
+    opacity:0.5 !important;
+}
+
+
+
+a {
+    color: #25d366;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: inherit;
+    vertical-align: middle;
+    -webkit-text-decoration-skip: objects;
+        margin-left: 10px;
+}
+
+.fa-upload:before {
+    content: "\f093"; 
+    color: white;
+    font-size: xxx-large;
+    font-weight: 100;
+}
+
+.fa, .fas {
+    font-weight: 100;
+    color: #1f56b6
+}
+
+.fa-search:before {
+    content: "\f002";
+    font-size: large;
+}
+.fa-user:before {
+    content: "\f007";
+    font-size: large;
+}
+.fa-car:before {
+    content: "\f1b9";
+    font-size: large;
+}
+.fa-gas-pump:before {
+    content: "\f52f";
+    font-size: large;
+        font-weight: 700;
+}
+  .fa-mobile:before {
+    content: "\f10b";
+    font-size: x-large;
+}
+.fa-envelope:before {
+    content: "\f0e0";
+    font-size: large;
+}
+
+
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-items: center;
+    justify-content: center;
+}
+.text-center {
+    text-align: center!important;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+}
+
+.col-form-label{
+
+  background-color: #fff;
+  color: #1f56b6;
+
+}
+.radio-inline label{
+    background-color: #497edb;
+    border: none;
+    color: white;
+    padding: 11px 5px;
+    text-decoration: none;
+    margin: 1px 3px;
+    border-radius: 5px;
+    cursor: pointer;  
+}
+
+.radio-inline1 label {
+    background-color: #497edb;
+    border: none;
+    color: white;
+    padding: 11px 5px;
+    text-decoration: none;
+    margin: 1px 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: -webkit-fill-available;
+}
+.radio-inline1  input[type="radio"] {
+  opacity: 0;
+  width: 0%;
+  position: fixed;
+}
+
+.radio-inline1 label:hover {
+    background-color: #1f56b6;
+    color:#fff;
+}
+.radio-inline1 input[type="radio"]:checked + label {
+    background-color:#1f56b6;
+    border-color: #1f56b6;
+    color:#fff;
+}
+
+
+.radio-inline  input[type="radio"] {
+  opacity: 0;
+  width: 0%;
+  position: fixed;
+}
+
+.radio-inline label:hover {
+    background-color: #1f56b6;
+    color:#fff;
+}
+.radio-inline input[type="radio"]:checked + label {
+    background-color:#1f56b6;
+    border-color: #1f56b6;
+    color:#fff;
+}
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #1f56b6;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #1f56b6;
+    border-radius: 0px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        border-radius: 5px;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 0px;
+      color : #1f56b6;
+  font-weight: 500;
+  float: right;
+}
+
+
+label#lab1,#lab2,#lab3 {
+display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+    background-color: #1f56b6;
+    background-clip: padding-box;
+    border: 1px solid #1f56b6;
+    border-radius: 0px;
+    /* transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
+    border-radius: 5px;
+}
+
+.autocomplete-items {
+  position: relative;
+  border: 1px solid #d4d4d4;
+  width: 100%;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+  color: black;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+
+
+.input-group-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #fff;
+    border: 1px solid #1f56b6;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right-style:none;
+}
+
+#mob,#email,#rto,#myInput,#fueltype,#carnum,#carnum1,#carmod,#name{
+      border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left-color: #fff;
+    border-left-style: : none;
+}
+
+
+.button1{
+    overflow: visible;
+    width: inherit;
+    color: white;
+    background-color: #497edb;
+    border-radius: 5px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 0px;
+    line-height: 1.5;
+    font-weight: 450;
+    border :0px;
+    height: 100%;
+    padding: .375rem .75rem;
+
+}
+
+
+
+
+.buttonupload{
+     background-color: #497edb;
+    border: none;
+    color: white;
+    padding: 11px 5px;
+    text-decoration: none;
+    margin: 1px 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+     text-align: center;
+    height: 100%;
+}
+
+button.buttonwhatsapp {
+    border: none;
+    color: white;
+    padding: 11px 5px;
+    text-decoration: none;
+    margin: 1px 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    background-color: #25d366;
+    text-align: center;
+    height: 100%;
+    }
+
+.button2{
+    background-color: inherit;
+
+    border: 0px;
+}
+
+#spandetails {
+    color: #497edb;
+    font-size: small;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.fa-chevron-left:before {
+    content: "\f053";
+    color: white;
+    font-size: large;
+        font-weight: 700;
+    margin-right: 5px;
+}
+.fa-whatsapp:before {
+    content: "\f232";
+    color: white;
+    font-size: xxx-large;
+    font-weight: 100;
+}
+
+#filediv{
+      border: 1px solid #1f56b6;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        border-radius: 5px;
+        position: relative;
+
+}
+
+label#rlab {
+   width: 10%;
+    border: 1px solid #1f56b6;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right-style: none;
+    display: table;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    height: inherit;
+}
+
+span#sid {
+    border: 1px;
+    border-color: black;
+    width: -webkit-fill-available;
+    width: 10%;
+    border: 1px solid #1f56b6;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right-style: none;
+    
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    height: inherit;
+    display: block;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+
+#uploadmod{
+padding-right: 0px;
+
+}
+a .fa-whatsapp:before {
+    content: "\f232";
+    vertical-align: middle;
+    margin-left: 5px;
+    font-size: inherit;
+    font-size: xx-large;
+    color: #25d366;
+}
+
+
+label {
+
+    margin-bottom: 0px; 
+}
+
+</style> 
+<script>
+  document.getElementById("details1").style.display = "none";
+  // document.getElementById("details2").style.display = "none";
+  document.getElementById("details3").style.display = "none";
+  document.getElementById("que").style.display = "none";
+  document.getElementById("expdate").style.display="none";
+
+  document.getElementById("1_1").style.display = "none";
+  document.getElementById("1_2").style.display = "none";
+
+
+  document.getElementById("fname").style.display = "none";
+  document.getElementById("contact").style.display = "none";
+  document.getElementById("submitdiv").style.display = "none";
+
+
+
+document.getElementById("carnum2").style.display="none";
+
+document.getElementById("rtodiv").style.display="none";
+document.getElementById("branddiv").style.display="none";
+document.getElementById("moddiv").style.display="none";
+document.getElementById("fueldiv").style.display="none";
+
+document.getElementById("lab1").style.display="none";
+document.getElementById("lab2").style.display="none";
+document.getElementById("lab3").style.display="none";
+
+function formsub(){document.getElementById("foo").submit();}
+
+function showbranddiv(){document.getElementById("branddiv").style.display="block";}
+function showmoddiv(){document.getElementById("moddiv").style.display="block";}
+function showfueldiv(){document.getElementById("fueldiv").style.display="block";}
+
+
+function showtab(){document.getElementById("tab").style.display="block";
+ document.getElementById("foo").style.display="none";}
+
+function validate1(){
+var flag1=1;
+if(document.getElementById("carnum").value=="")
+flag1=0;
+
+var x=document.getElementsByName("ynclaim");
+if (x[0].checked==false && x[1].checked==false)
+flag1=0;
+
+if(document.getElementById("name").value=="")
+flag1=0;
+
+if(document.getElementById("mob").value=="")
+flag1=0;
+
+return flag1;
+
+}
+function validate2(){
+var flag1=1;
+if(document.getElementById("carnum1").value=="")
+flag1=0;
+
+var y=document.getElementsByName("covertype");
+if (y[0].checked==false && y[1]==false)
+flag1=0;
+
+
+if (y[0].checked==true)
+{
+var y1=document.getElementsByName("ynexp");
+if (y1[0].checked==false && y1[1]==false)
+    flag1=0;
+  if (y1[0].checked==true){
+  if(document.getElementById("expdate1").value=="")
+flag1=0;
+}
+}
+
+if(document.getElementById("name").value=="")
+flag1=0;
+
+if(document.getElementById("mob").value=="")
+flag1=0;
+
+return flag1;
+
+}
+
+function validate3(){
+var flag1=1;
+if(document.getElementById("rto").value=="")
+flag1=0;
+
+if(document.getElementById("myInput").value=="")
+flag1=0;
+if(document.getElementById("carmod").value=="")
+flag1=0;
+if(document.getElementById("fueltype").value=="")
+flag1=0;
+
+if(document.getElementById("name").value=="")
+flag1=0;
+
+if(document.getElementById("mob").value=="")
+flag1=0;
+
+return flag1;
+
+}
+var f1=0;
+function Whatsapp(){
+  document.getElementById('submit_key').click();
+ if(document.getElementById('radio_2').checked)
+f1=validate1();
+
+else if(document.getElementById('radio_1').checked)
+  f1=validate2();
+
+else if(document.getElementById('radio_3').checked)
+  f1=validate3();
+
+if (f1==1)
+window.open("https://wa.me/?text=I'm%20interested%20in%20car%20Insurance");
+}
+
+function Uploadfun(){
+  document.getElementById('submit_key').click();
+ if(document.getElementById('radio_2').checked)
+f1=validate1();
+
+else if(document.getElementById('radio_2').checked)
+  f1=validate2();
+
+else if(document.getElementById('radio_3').checked)
+  f1=validate3();
+
+if (f1==1)
+{document.getElementById("isfile").value="Yes";
+  document.getElementById('uploadkey').click();
+}
+
+}
+
+
+
+
+
+
+
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+ if(dd<10){
+        dd='0'+dd
+    } 
+    if(mm<10){
+        mm='0'+mm
+    } 
+
+today = yyyy+'-'+mm+'-'+dd;
+document.getElementById("expdate1").setAttribute("max", today);
+
+
+
+function typeselect()
+{   document.getElementById("foo").style.display="block";
+  document.getElementById("foo").reset();
+    document.getElementById("tab").style.display="none";
+
+  if(document.getElementById('radio_1').checked)
+  {
+  document.getElementById("details1").style.display = "block";
+  document.getElementById("1_1").style.display = "none";
+  showcarnum2();
+  document.getElementById("lab2").style.display="block";
+  document.getElementById("carnum1").setAttribute("required","true");
+
+  }
+
+  else
+  {
+    document.getElementById("details1").style.display = "none";
+    document.getElementById("carnum2").style.display="none";
+    document.getElementById("que").style.display="none";
+        document.getElementById("expdate").style.display="none";
+    document.getElementById("lab2").style.display="none";
+    document.getElementById("carnum1").removeAttribute("required");
+    document.getElementById("expdate").removeAttribute("required");
+  }
+
+
+  if(document.getElementById('radio_2').checked)
+  {
+  document.getElementById("details2").style.display = "block";
+  // document.getElementById("ynclaim").setAttribute("required","true");
+  // document.getElementById("carnum").setAttribute("required","true");
+  document.getElementById("1_1").style.display = "block";
+  document.getElementById("lab1").style.display="block";
+  show1_2();
+  document.getElementById("carnum").setAttribute("required","true");
+document.getElementById("yes").setAttribute("required","true");
+document.getElementById("no").setAttribute("required","true");
+}
+  else{  document.getElementById("1_1").style.display = "none";
+document.getElementsByName("ynclaim").checked=false;
+document.getElementById("lab1").style.display="none";
+    document.getElementById("details2").style.display = "none";
+  document.getElementById("1_2").style.display = "none";
+  document.getElementById("fname").style.display = "none";
+  document.getElementById("contact").style.display = "none";
+    document.getElementById("submitdiv").style.display = "none";
+    document.getElementById("carnum").removeAttribute("required");
+document.getElementById("yes").removeAttribute("required");
+document.getElementById("no").removeAttribute("required");
+
+
+  }
+
+
+
+  if(document.getElementById('radio_3').checked)
+  {document.getElementById("details3").style.display = "block";
+document.getElementById("rtodiv").style.display="block";
+showmoddiv();
+showbranddiv();
+showfueldiv();
+document.getElementById("lab3").style.display="block";
+document.getElementById("rto").setAttribute("required","true");
+document.getElementById("myInput").setAttribute("required","true");
+document.getElementById("carmod").setAttribute("required","true");
+document.getElementById("fueltype").setAttribute("required","true");
+document.getElementById("uploadlab").innerHTML="Upload New Car's Quotation/Invoice"
+}
+  
+  else
+   { document.getElementById("details3").style.display = "none";
+document.getElementById("branddiv").style.display="none";
+document.getElementById("moddiv").style.display="none";
+document.getElementById("fueldiv").style.display="none";
+document.getElementById("lab3").style.display="none";
+document.getElementById("rto").removeAttribute("required");
+document.getElementById("myInput").removeAttribute("required");
+document.getElementById("carmod").removeAttribute("required");
+document.getElementById("fueltype").removeAttribute("required");
+document.getElementById("uploadlab").innerHTML="Upload Past Policy"
+}
+}
+
+function show1_2()
+{  document.getElementById("1_2").style.display = "block";}
+
+function show_name()
+{
+  document.getElementById("fname").style.display = "block";
+  showcontact();
+  showsubmit();
+}
+
+
+function showcontact()
+{document.getElementById("contact").style.display = "block";
+
+}
+
+
+
+function showsubmit()
+{  document.getElementById("submitdiv").style.display = "block";}
+
+
+function showque()
+{
+document.getElementById("que").style.display = "block";
+
+}
+
+function hideque(){
+  document.getElementById("que").style.display = "none";
+document.getElementById("expdate").style.display="none";
+showcarnum2();
+show_name();
+  
+}
+
+function showexp()
+{
+  document.getElementById("expdate").style.display="block";
+  document.getElementById("expdate").setAttribute("required","true");
+
+}
+
+function hideexp()
+{ document.getElementById("expdate").style.display="none";
+document.getElementById("expdate").removeAttribute("required");
+show_name();
+}
+
+function showcarnum2()
+{document.getElementById("carnum2").style.display="block";}
+</script>
+
+<script>
+
+
+function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+          if(((arr[i].toLowerCase()).indexOf(val.toLowerCase()))>-1)
+        {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+          b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+
+
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+  /*execute a function when someone clicks in the document:*/
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+
+/*An array containing all the country names in the world:*/
+var brands = ["Audi","Bentley","BMW","Chevrolet","Fiat","Ford","Honda","Hyundai","Jaguar","Land Rover","Mahindra","Maruti Suzuki","Mercedes Benz","Mitsubishi","Nissan","Porche","Range Rover","Renault","Rolls-Royce","Skoda","Tata Motors","Toyota","Volkswagen","Volvo"];
+
+/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+autocomplete(document.getElementById("myInput"), brands);
+
+var rtodetails = ["Port Blair, Andaman District(AN01)", "Car Nicobar, Nicobar District(AN02)", "Adilabad(AP01)", "Mancherial(AP01)", "Nirmal(AP01)", "Anantapur(AP02)", "Hindupur(AP02)", "Chittoor(AP03)", "Tirupati(AP03)", "Madanapalle(AP03)", "Rajampet(AP03)", "Proddatur(AP04)", "Kadapa(AP04)", "Kakinada(AP05)",  "Amalapuram(AP05)", "Rajahmundry(AP05)", "Kakinada(AP06)", "Guntur / Piduguralla / Narasaraopet / Repalle(AP07)", "Guntur(AP08)", "Khairtabad, Hyderabad District(AP09)", "Secunderabad, Hyderabad District(AP10)", "Malakpet, Hyderabad District(AP11)", "Bahadurpura, Hyderabad District(AP12)", "Mehdipatnam, Hyderabad District(AP13)", "Karimnagar(AP14)", "Karimnagar / Jagtial / Peddapalli(AP15)", "Bejawada / Gudivada / Machilipatnam / Nandigama(AP16 & AP17)", "Nuzvid(AP18 & AP19)", "Khammam / Kothagudem / Sathupally / Yellandu(AP20)", "Kurnool / Adoni / Nandyal(AP21)", "Mahaboobnagar / Pebbair / Gadwal(AP22)", "Medak / Siddipet / Sangareddy (RC puram)(AP23)", "Nalgonda / Bhongir / Suryapet(AP24)", "Nizamabad / Kamareddy(AP25)", "Nellore / Kavali / Gudur / Sullurpeta(AP26)", "Ongole / Chirala / Markapur / Prakasam(AP27)", "Rangareddy(AP28 & AP29)", "Srikakulam /Tekkali /Palasa/Sompeta/Ichchapuram/Kaviti(AP30)", "Visakhapatnam / Gajuwaka / Anakapalli(AP31)", "Visakhapatnam(AP32)", "Gajuwaka(AP33 & AP34)", "Vizianagaram(AP35)", "Warangal / Jangaon / Mahabubabad(AP36)", "Eluru / Jangareddygudem / Kovvur / Tadepalligudem / Tanuku / Bhimavaram / Palakollu / Chintalapudi(AP37)", "Itanagar(AR01)", "Itanagar (commercial vehicles of state transport)(AR02)", "Tawang(AR03)", "Bomdila(AR04)", "Seppa(AR05)", "Ziro(AR06)", "Daporijo(AR07)", "Along(AR08)", "Pasighat(AR09)", "Anini(AR10)", "Tezu(AR11)", "Changlang(AR12)", "Khonsa(AR13)", "Yingkiong(AR14)", "Guwahati, Kamrup(AS01)", "Nagaon(AS02)", "Jorhat(AS03)", "Sibsagar(AS04)", "Golaghat(AS05)", "Dibrugarh(AS06)", "Lakhimpur district(AS07)", "Dima Hasao(AS08)", "Karbi Anglong(AS09)", "Karimganj(AS10)", "Cachar(AS11)", "Sonitpur(AS12)", "Darrang(AS13)", "Nalbari(AS14)", "Barpeta(AS15)", "Kokrajhar(AS16)", "Dhubri(AS17)", "Goalpara(AS18)", "Bongaigaon(AS19)", "Marigaon(AS21)", "Dhemaji(AS22)", "Tinsukia(AS23)", "Hailakandi(AS24)", "Guwahati no longer used(AS25)", "Udalguri(AS27)", "Assam State Transport Corporation (ASTC)(AS20)", "Assam Police vehicles(AS30)", "Assam Police(AS31)", "Patna(BR01)", "Gaya(BR02)", "Bhojpur(BR03)", "Chapra(BR04)", "Motihari(BR05)", "Muzaffarpur(BR06)", "Darbhanga(BR07)", "Munger(BR08)", "Begusarai(BR09)", "Bhagalpur(BR10)", "Purnea(BR11)", "Chaibasa(BR18)", "Saharsa(BR19)", "(not allotted after Jharkhand Division)(BR20)", "Nalanda(BR21)", "Bettiah(BR22)", "Giridih(BR23)", "Dehri(BR24)", "Jehanabad(BR25)", "Aurangabad(BR26)", "Nawada(BR27)", "Gopalganj(BR28)", "Siwan(BR29)", "Sitamarhi(BR30)", "Vaishali district(BR31)", "Madhubani(BR32)", "Samastipur(BR33)", "Khagaria(BR34)", "(not allotted after Jharkhand Division)(BR35)", "(not allotted after Jharkhand Division)(BR36)", "Kishanganj(BR37)", "Araria(BR38)", "Katihar(BR39)", "(not allotted after Jharkhand Division)(BR40)", "(not allotted after Jharkhand Division)(BR41)", "(not allotted after Jharkhand Division)(BR42)", "Madhepura(BR43)", "Buxar(BR44)", "Bhabua(BR45)", "Jamui(BR46)", "Koderma(BR47)", "Supaul(BR50)", "Banka(BR51)", "Sheikhpura(BR52)", "Lakhisarai(BR53)", "(not allotted)(BR54)", "(not allotted)(BR55)", "Arwal(BR56)", "Governor of Chattisgarh(CG01)", "Government of Chattisgarh(CG02)", "Chattisgarh Police(CG03)", "Raipur(CG04)", "Dhamtari(CG05)", "Mahasamund(CG06)", "Durg(CG07)", "Rajnandgaon(CG08)", "Kawardha(CG09)", "Bilaspur(CG10)", "JanjgirChampa(CG11)", "Korba(CG12)", "Raigarh(CG13)", "Jashpur(CG14)", "Ambikapur(CG15)", "Baikunthpur(CG16)", "Jagdalpur(CG17)", "Dantewada(CG18)", "Kanker(CG19)", "Bijapur(CG20)", "Chandigarh(CH01)", "Chandigarh Government Vehicles(CH01 G)", "Chandigarh Commercial Vehicles(CH02)", "Chandigarh(CH03)", "Chandigarh(CH04)", "Diu(DD02)", "Daman(DD03)", "Delhi North: Mall Road(DL1)", "New Delhi: Tilak Marg(DL2)", "South Delhi South: Sheikh Sarai(DL3)", "West Delhi West 1: West Janakpuri(DL4)", "North East Delhi: Loni Road(DL5)", "Central Delhi Central: Sarai Kale Khan(DL6)", "East Delhi East 1: Mayur Vihar(DL7)", "North West Delhi 1: Wazir Pur(DL8)", "South West Delhi South West 1: Janakpuri / Palam(DL9)", "West DelhiII: Raja Garden(DL10)", "North West Delhi North West Zone II: Rohini(DL11)", "South West Delhi South West II: Vasant Vihar(DL12)", "East Delhi II: Surajmal Vihar / Shahdara(DL13)", "Sonipat due to the NCR, effectively situated in Haryana(DL14)", "Gurgaon due to the NCR, effectively situated in Haryana(DL15)", "Faridabad due to the NCR, effectively situated in Haryana(DL16)", "Noida due to the NCR, effectively situated in Uttar Pradesh(DL17)", "Ghaziabad due to the NCR, effectively situated in Uttar Pradesh(DL18)", "Delhi for trucks(DL1L)", "Delhi for nonresident Indians(DL1N)", "Delhi for commercial buses(DL1P)", "Delhi for auto rickshaws and radio taxis(DL1R)", "Delhi for commercial taxis(DL1T)", "Delhi for commercial private taxis(DL1Y)", "Silvassa(DN09)", "Panaji(GA01)", "Margao(GA02)", "Mapusa(GA03)", "Bicholim(GA04)", "Ponda(GA05)", "Vasco da Gama(GA06)", "Panaji(GA07)", "Margao(GA08)", "Quepem(GA09)", "Canacona(GA10)", "Pernem(GA11)", "Ahmedabad(GJ01)", "Mehsana(GJ02)", "Rajkot(GJ03)", "Bhavnagar(GJ04)", "Surat(GJ05)", "Vadodara(GJ06)", "Kheda(GJ07)", "Palanpur(GJ08)", "Sabarkantha(GJ09)", "Jamnagar(GJ10)", "Junagadh(GJ11)", "Kutch(GJ12)", "Surendranagar(GJ13)", "Amreli(GJ14)", "Valsad(GJ15)", "Bharuch(GJ16)", "Panchmahal (Godhara)(GJ17)", "Gandhinagar(GJ18)", "Bardoli(GJ19)", "Dahod(GJ20)", "Navsari(GJ21)", "Narmada(GJ22)", "Anand(GJ23)", "Patan(GJ24)", "Porbandar(GJ25)", "Vyara(GJ26)", "East Ahmedabad(GJ27)", "West Surat(GJ28)", "Vadodara rural(GJ29)", "East Rajkot(GJ30)", "Shimla Urban (tourist buses & taxis)(HP01 & HP02)", "Shimla Urban(HP03)", "Dharamsala (autorikshaws)(HP04)", "Mandi (autorikshaws)(HP05)", "Rampur Bushar(HP06)", "Shimla(HP07)", "Chaupal(HP08)", "Theog(HP09)", "Rohru(HP10)", "Arki(HP11)", "Nalagarh(HP12)", "Kandaghat(HP13)", "Solan(HP14)", "Parwanoo(HP15)", "Rajgarh(HP16)", "Paonta Sahib(HP17)", "Nahan(HP18)", "Amb(HP19)", "Una(HP20)", "Barsar(HP21)", "Hamirpur(HP22)", "Ghumarwin(HP23)", "Bilaspur(HP24)", "Kalpa(HP25)", "Nichar (Bhaba Nagar)(HP26)", "Pooh(HP27)", "Sarkaghat(HP28)", "Jogindernagar(HP29)", "Karsog(HP30)", "Sundernagar(HP31)", "Mandi(HP32)", "Mandi(HP33)", "Kullu(HP34)", "Anni(HP35)", "Dehra(HP36)", "Palampur(HP37)", "Nurpur(HP38)", "Dharamshala(HP39)", "Kangra(HP40)", "Kaza(HP41)", "Keylong(HP42)", "Udaipur(HP43)", "Churah(HP44)", "Pangi(HP45)", "Bharmour(HP46)", "Dalhousie(HP47)", "Chamba(HP48)", "Banjar(HP49)", "Shimla (autorikshaws)(HP50)", "Shimla (rural)(HP51 & HP52)", "Baijnath(HP53)", "Jawali(HP54)", "Nadaun / Hamirpur(HP55)", "Jaisinghpur(HP56)", "Chowari(HP57)", "Manali(HP58)", "DodraKwar(HP62)", "Shimla(HP63)", "Solan(HP64)", "Mandi(HP65)", "Kullu(HP66)", "Hamirpur(HP67)", "Kangra(HP68)", "Bilaspur(HP69)", "Nahan(HP71)", "Una(HP72)", "Chamba(HP73)", "Bhoranj(HP74)", "Paddhar(HP76)", "Ambala (HR 01 GA for trucks; HR 01 PA, PB, PC so on for tourist buses; see also HR37)(HR01)", "Yamuna Nagar(HR02)", "Panchkula(HR03)", "Naraingarh(HR04)", "Karnal(HR05)", "Panipat(HR06)", "Kuru(HR07)", "Kaithal(HR08)", "Guhla(HR09)", "Sonepat(HR10)", "Gohana(HR11)", "Rohtak(HR12)", "Bahadurgarh(HR13)", "Jhajjar(HR14)", "Meham(HR15)", "Bhiwani(HR16)", "Siwani(HR17)", "Loharu(HR18)", "Charkhi Dadri(HR19)", "Hisar(HR20)", "Hansi(HR21)", "Fatehabad(HR22)", "Tohana(HR23)", "Sirsa(HR24)", "Dabwali(HR25)", "Gurgaon(HR26)", "Nuh(HR27)", "Ferozepur Jhirka(HR28)", "Ballabgarh(HR29)", "Palwal(HR30)", "Jind(HR31)", "Narwana(HR32)", "Safidon(HR33)", "Mohindergarh(HR34)", "Narnaul(HR35)", "Rewari(HR36)", "Ambala (commercial vehicles only)(HR37)", "Faridabad (commercial vehicles only)(HR38)", "Hisar (commercial vehicles only)(HR39)", "Assandh(HR40)", "Pehowa(HR41)", "Ganaur(HR42)", "Kosli(HR43)", "Ellenabad(HR44)", "Karnal (commercial vehicles only)(HR45)", "Rohtak (commercial vehicles only)(HR46)", "Rewari (commercial vehicles only)(HR47)", "Tosham(HR48)", "Kalka(HR49)", "Hodal(HR50)", "Faridabad(HR51)", "Hatin(HR52)", "Adampur(HR53)", "Ambala Barara(HR54)", "Gurgaon (commercial vehicles only)(HR55)", "Jind (commercial vehicles only)(HR56)", "Sirsa (commercial vehicles only)(HR57)", "Jagadhari, Yamuna Nagar (commercial vehicles only)(HR58)", "Ratia(HR59)", "Samalkha(HR60)", "Bhiwani (commercial vehicles only)(HR61)", "Fatehabad (commercial vehicles only)(HR62)", "Jhajjar (commercial vehicles only)(HR63)", "Kaithal (commercial vehicles only)(HR64)", "Kurukshetra (commercial vehicles only)(HR65)", "Narnaul (commercial vehicles only)(HR66)", "Panipat (commercial vehicles only)(HR67)", "Panchkula (commercial vehicles only)(HR68)", "Sonipat (commercial vehicles only)(HR69)", "This series belongs to the Transport Commissioner in Chandigarh(HR70)", "Bilaspur(HR71)", "Gurgaon (South)(HR72)", "Palwal(HR73)", "Mewat (Nuh)(HR74)", "Indri(HR75)", "Pataudi(HR76)", "Beri(HR77)", "Sahabad(HR78)", "Kharkhoda(HR79)", "Barwala(HR80)", "Sonipat(HR86)", "Kundli(HR88)", "(temporary numbers)(HR99)", "Ranchi(JH01)", "Hazaribagh / Ramgarh(JH02)", "Daltonganj(JH03)", "Dumka(JH04)", "Jamshedpur(JH05)", "Chaibasa(JH06)", "Gumla(JH07)", "Lohardaga(JH08)", "Bokaro Steel City(JH09)", "Dhanbad(JH10)", "Giridih(JH11)", "Koderma(JH12)", "Chatra(JH13)", "Garhwa(JH14)", "Deoghar(JH15)", "Pakur(JH16)", "Godda(JH17)", "Sahibganj(JH18)", "Latehar(JH19)", "Simdega(JH20)", "Jamtara(JH21)", "SaraikelaKharsawan(JH22)", "Srinagar(JK01)", "Jammu(JK02)", "Anantnag(JK03)", "Budgam(JK04)", "Baramulla(JK05)", "Doda(JK06)", "Kargil(JK07)", "Kathua(JK08)", "Kupwara(JK09)", "Leh(JK10)", "Rajouri(JK11)", "Poonch(JK12)", "Pulwama(JK13)", "Udhampur(JK14)", "Bandipora(JK15)", "Ganderbal(JK16)", "Kishtwar(JK17)", "Kulgam(JK18)", "Ramban(JK19)", "Reasi(JK20)", "Samba(JK21)", "Shopian(JK22)", "Bangalore Central (Koramangala)(KA01)", "Bangalore West (Rajajinagar)(KA02)", "Bangalore East (Indiranagar)(KA03)", "Bangalore North (Yeshwanthpur)(KA04)", "Bangalore South (Jayanagar)]](KA05)", "Tumkur(KA06)", "Kolar(KA07)", "Kolar Gold Fields (KGF)(KA08)", "Mysore West(KA09)", "Chamrajnagar(KA10)", "Mandya(KA11)", "Madikeri(KA12)", "Hassan(KA13)", "Shimoga(KA14)", "Sagara(KA15)", "Chitradurga(KA16)", "Davangere(KA17)", "Chickmagalur(KA18)", "Mangalore(KA19)", "Udupi(KA20)", "Puttur / Sullia(KA21)", "Belgaum(KA22)", "Chikkodi(KA23)", "Bailhongal(KA24)", "Dharwad(KA25)", "Gadag(KA26)", "Haveri(KA27)", "Bijapur(KA28)", "Bagalkot(KA29)", "Karwar(KA30)", "Sirsi(KA31)", "Gulbarga(KA32)", "Yadgir(KA33)", "Bellary(KA34)", "Hospet(KA35)", "Raichur(KA36)", "Koppal(KA37)", "Bidar(KA38)", "Bhalki(KA39)", "Chikkaballapur(KA40)", "Rajarajeshwari Nagar, Bangalore Urban district(KA41)", "Ramanagara(KA42)", "Devanahalli, Bangalore Rural district(KA43)", "Tiptur(KA44)", "Hunsur(KA45)", "Sakleshpur(KA46)", "Honnavar(KA47)", "Jamkhandi(KA48)", "Gokak(KA49)", "Yelahanka, Bangalore Urban district(KA50)", "Electronics City, Bangalore Urban district(KA51)", "Nelamangala, Bangalore Urban district(KA52)", "K.R. Puram, Bangalore Urban district(KA53)", "Nagamangala(KA54)", "Mysore East(KA55)", "Basavakalyan(KA56)", "Shantinagar, Bangalore Urban district (only for KSRTC, BMTC and autos[1])(KA57)", "Thiruvananthapuram City(KL01)", "Kollam(KL02)", "Pathanamthitta(KL03)", "Alappuzha(KL04)", "Kottayam(KL05)", "Idukki(KL06)", "Eranakulam(KL07)", "Thrissur(KL08)", "Palakkad(KL09)", "Malappuram(KL10)", "Kozhikode(KL11)", "Wayanad(KL12)", "Kannur(KL13)", "Kasargode(KL14)", "Thiruvananthapuram (Kerala State Road Transport Corporation buses)(KL15)", "ThiruvananthapuramAttingal(KL16)", "Muvattupuzha(KL17)", "Vadakara(KL18)", "ThiruvananthapuramParassala(KL19)", "ThiruvananthapuramNeyyattinkara(KL20)", "ThiruvananthapuramNedumangad(KL21)", "Kazhakkoottam(KL22)", "Karunagapally(KL23)", "Kottarakara(KL24)", "Punalur(KL25)", "Adoor(KL26)", "Thiruvalla(KL27)", "Mallappally(KL28)", "Kayamkulam(KL29)", "Chengannur(KL30)", "Mavelikara(KL31)", "Cherthala(KL32)", "Changanassery(KL33)", "Kanjirappally(KL34)", "Pala(KL35)", "Vaikom(KL36)", "Vandiperiyar(KL37)", "Thodupuzha(KL38)", "Thripunithura(KL39)", "Perumbavoor(KL40)", "Aluva(KL41)", "North Paravur(KL42)", "Mattancherry(KL43)", "kothamangalam(KL44)", "Irinjalakuda(KL45)", "Guruvayur(KL46)", "Kodungallur(KL47)", "Wadakkancherry(KL48)", "Alathur(KL49)", "Mannarghat(KL50)", "Ottappalam(KL51)", "Pattambi(KL52)", "Perinthalmanna(KL53)", "Ponnani(KL54)", "Tirur(KL55)", "Koyilandi(KL56)", "Koduvally(KL57)", "Thalassery(KL58)", "Thaliparamba(KL59)", "Kanhangad(KL60)", "Kunnathur(KL61)", "Ranni(KL62)", "Angamaly(KL63)", "Chalakkudy(KL64)", "Thirurangadi(KL65)", "Kavaratti(LD01)", "Mumbai (Central) RTO is located in Tardeo(MH01)", "Mumbai (West) RTO is located in Andheri West(MH02)", "Mumbai (East) RTO is located in Wadala(MH03)", "Thane(MH04)", "Thane (Central Suburbs): Kalyan, Dombivli, Ulhasnagar, Ambernath and Badlapur RTO is located in Kalyan(MH05)", "Raigad RTO is located in Pen (does not include Navi Mumbai, Kharghar to Panvel to Pen)(MH06)", "Sindhudurg(MH07)", "Ratnagiri(MH08)", "Kolhapur(MH09)", "Sangli(MH10)", "Satara(MH11)", "Pune(MH12)", "Solapur(MH13)", "Pune (Outskirts) RTO is located in PimpriChinchwad(MH14)", "Nashik(MH15)", "Ahmednagar(MH16)", "Shrirampur(MH17)", "Dhule(MH18)", "Jalgaon(MH19)", "Aurangabad(MH20)", "Jalna(MH21)", "Parbhani(MH22)", "Beed(MH23)", "Latur(MH24)", "Osmanabad(MH25)", "Nanded(MH26)", "Amravati(MH27)", "Buldana(MH28)", "Yavatmal RTO is located on Nagpur Road(MH29)", "Akola(MH30)", "Nagpur(MH31)", "Wardha(MH32)", "Gadchiroli(MH33)", "Chandrapur(MH34)", "Gondia(MH35)", "Bhandara(MH36)", "Washim(MH37)", "Hingoli(MH38)", "Nandurbar(MH39)", "Wadi, Nagpur (rural)(MH40)", "Malegaon(MH41)", "Baramati(MH42)", "Navi Mumbai RTO is located in Vashi (Sanpada)(MH43)", "Ambejogai(MH44)", "Akluj(MH45)", "Panvel(MH46)", "Borivali, Mumbai (Western Suburbs from Goregaon to Dahisar)[2](MH47)", "Vasai Thane (Western Suburbs from Vasai) RTO is located in Virar(MH48)", "Nagpur (East) RTO is located on Bhandara Road(MH49)", "Karad (Satara Rural) RTO is located in Karad(MH50)", "Shillong (government vehicles)(ML01)", "Shillong (police vehicles)(ML02)", "Shillong (vehicles owned by transport corporations)(ML03)", "Jaintia Hills(ML04)", "East Khasi Hills(ML05)", "West Khasi Hills(ML06)", "East Garo Hills(ML07)", "West Garo Hills(ML08)", "South Garo Hills(ML09)", "RiBhoi(ML10)", "Imphal(MN01)", "Churachandpur(MN02)", "Kangpokpi(MN03)", "Thoubal(MN04)", "State Governor's Vehicle(MP01)", "M.P. Government Vehicle(MP02)", "M.P. Police Vehicle(MP03)", "Bhopal(MP04)", "Hoshangabad(MP05)", "Morena(MP06)", "Gwalior(MP07)", "Guna(MP08)", "Indore(MP09)", "Khargone(MP10)", "Dhar(MP11)", "Khandwa(MP12)", "Ujjain(MP13)", "Mandsaur(MP14)", "Sagar(MP15)", "Chhatarpur(MP16)", "Rewa(MP17)", "Shahdol(MP18)", "Satna(MP19)", "Jabalpur(MP20)", "Katni(MP21)", "Seoni(MP22)", "Raipur (not in use)(MP23)", "Durg (not in use)(MP24)", "Jagdalpur (not in use)(MP25)", "Bilaspur (not in use)(MP26)", "Ambikapur (not in use)(MP27)", "Chhindwara(MP28)", "Rajnandgaon (not in use)(MP29)", "Bhind(MP30)", "Sheopur(MP31)", "Datia(MP32)", "Shivpuri(MP33)", "Damoh(MP34)", "Panna(MP35)", "Tikamgarh(MP36)", "Sehore(MP37)", "Raisen(MP38)", "Rajgarh(MP39)", "Vidisha(MP40)", "Dewas(MP41)", "Shajapur(MP42)", "Ratlam(MP43)", "Neemuch(MP44)", "Jhabua(MP45)", "Badwani(MP46)", "Harda(MP47)", "Betul(MP48)", "Narsinghpur(MP49)", "Balaghat(MP50)", "Mandla(MP51)", "Dindori(MP52)", "Sidhi(MP53)", "Umariya(MP54)", "not in use(MP55)", "not in use(MP56)", "(not alloted)(MP57)", "not in use(MP58)", "(not alloted)(MP59)", "(not alloted)(MP60)", "(not alloted)(MP61)", "(not alloted)(MP62)", "(not alloted)(MP63)", "(not alloted)(MP64)", "Anoopur(MP65)", "Singrauli(MP66)", "Ashoknagar(MP67)", "Burhanpur(MP68)", "Alirajpur (upcoming)(MP69)", "Aizawl(MZ01)", "Lunglei(MZ02)", "Saiha(MZ03)", "Champhai(MZ04)", "Kolasib(MZ05)", "Serchhip(MZ06)", "Lawngtlai(MZ07)", "Mamit(MZ08)", "Kohima(NL01)", "Mokokchung(NL02)", "Tuensang(NL03)", "Mon(NL04)", "Wokha(NL05)", "Zunheboto(NL06)", "Dimapur(NL07)", "Phek(NL08)", "Balasore(OR01)", "Bhubaneswar(OR02)", "Bolangir(OR03)", "Chandikhole(OR04)", "Cuttack(OR05)", "Dhenkanal(OR06)", "Ganjam(OR07)", "Kalahandi(OR08)", "Keonjhar(OR09)", "Koraput(OR10)", "Mayurbhanj(OR11)", "Phulabani(OR12)", "Puri(OR13)", "Rourkela(OR14)", "Sambalpur(OR15)", "Sundergarh(OR16)", "Baragarh(OR17)", "Rayagada(OR18)", "Angul(OR19)", "Gajapati(OR20)", "Jagatsinghpur(OR21)", "Bhadrak(OR22)", "Jharsuguda(OR23)", "Nabarangpur(OR24)", "Nayagarh(OR25)", "Nuapada(OR26)", "Boudh(OR27)", "Debagarh(OR28)", "Kendarapara(OR29)", "Malkangiri(OR30)", "Sonepur(OR31)", "Taxis(PB01)", "Amritsar(PB02)", "Bathinda(PB03)", "Faridkot(PB04)", "Ferozepur(PB05)", "Gurdaspur(PB06)", "Hoshiarpur(PB07)", "Jalandhar(PB08)", "Kapurthala(PB09)", "Ludhiana(PB10)", "Patiala(PB11)", "Ropar(PB12)", "Sangrur(PB13)", "Ajnala(PB14)", "Abohar(PB15)", "Anandpur Sahib(PB16)", "Baba Bakala(PB17)", "Batala(PB18)", "Barnala(PB19)", "Balachaur(PB20)", "Dasua(PB21)", "Fazilka(PB22)", "Fatehgarh Sahib(PB23)", "Garhshankar(PB24)", "Jagraon(PB25)", "Khanna(PB26)", "Kharar(PB27)", "Malerkotla(PB28)", "Moga(PB29)", "Muktsar(PB30)", "Mansa(PB31)", "Nawanshahr(PB32)", "Nakodar(PB33)", "Nabha(PB34)", "Pathankot(PB35)", "Phagwara(PB36)", "Phillaur(PB37)", "Patti(PB38)", "Rajpura(PB39)", "Rampura Phul(PB40)", "Sultanpur Lodhi(PB41)", "Samana(PB42)", "Samrala(PB43)", "Sunam(PB44)", "Talwandi Sabo(PB45)", "Tarn Taran(PB46)", "Zira(PB47)", "Amloh(PB48)", "Khamano(PB49)", "Budhlada(PB50)", "Jhunir / Sardulgarh(PB51)", "Bassi Pathana(PB52)", "Malout(PB53)", "Mukerian(PB54)", "Payal(PB55)", "Raikot(PB56)", "Bhulath(PB57)", "Dera Baba Nanak(PB58)", "Dhuri(PB59)", "Gidderbaha(PB60)", "Jalalabad(PB61)", "Jaitu(PB62)", "Khadoor Sahib(PB63)", "Moonak(PB64)", "Mohali(PB65)", "Nihal Singh Wala(PB66)", "Shahkot(PB67)", "Dhar(PB68)", "Bagha Purana(PB69)", "Dera Bassi(PB70)", "Chamkaur Sahib(PB71)", "Patran(PB72)", "Tappa Mandi(PB73)", "Nangal(PB74)", "Lehra(PB75)", "Pondicherry(PY01)", "Karaikal(PY02)", "Mahe(PY03)", "Yanam(PY04)", "Ajmer(RJ01)", "Alwar(RJ02)", "Banswara(RJ03)", "Barmer(RJ04)", "Bharatpur(RJ05)", "Bhilwara(RJ06)", "Bikaner(RJ07)", "Bundi(RJ08)", "Chittaurgarh(RJ09)", "Churu(RJ10)", "Dholpur(RJ11)", "Dungarpur(RJ12)", "Sri Ganganagar(RJ13)", "Jaipur(RJ14)", "Jaisalmer(RJ15)", "Jalore(RJ16)", "Jhalawar(RJ17)", "Jhunjhunu(RJ18)", "Jodhpur(RJ19)", "Kota(RJ20)", "Nagaur(RJ21)", "Pali(RJ22)", "Sikar(RJ23)", "Sirohi(RJ24)", "Sawai Madhopur(RJ25)", "Tonk(RJ26)", "Udaipur(RJ27)", "Baran(RJ28)", "Dausa(RJ29)", "Rajsamand(RJ30)", "Hanumangarh(RJ31)", "Kotputli(RJ32)", "Ramganj Mandi(RJ33)", "Karauli(RJ34)", "Pratapgarh(RJ35)", "Beawar(RJ36)", "Didwana(RJ37)", "Rawhhuu(RJ38)", "Gangtok, East Sikkim(SK01)", "Gyalshing, West Sikkim(SK02)", "Mangan, North Sikkim(SK03)", "Jorethang, South Sikkim(SK04)", "Chennai Central (Ayanavaram)(TN01)", "Chennai West (Anna Nagar)(TN02)", "Chennai North East (Tondiarpet)(TN03)", "Chennai East (Basin Bridge)(TN04)", "Chennai North (Vyasarpadi)(TN05)", "Chennai South East (Mandaveli)(TN06)", "Chennai South (Thiruvanmiyur)(TN07)", "Chennai West (K.K. Nagar)(TN09)", "Chennai South West (Valasarawakkam)(TN10)", "Tambaram(TN11)", "Tindivanam(TN16)", "Sengundram(TN18)", "Chengalpattu(TN19)", "Tiruvallur(TN20)", "Kanchipuram(TN21)", "Meenambakkam(TN22)", "Vellore(TN23)", "Krishnagiri(TN24)", "Thiruvannamalai(TN25)", "Namakkal(TN28)", "Dharmapuri(TN29)", "Salem (West)(TN30)", "Cuddalore(TN31)", "Villupuram(TN32)", "Erode(TN33)", "Thiruchengode(TN34)", "Gobichettipalayam(TN36)", "Coimbatore (South)(TN37)", "Coimbatore (North)(TN38)", "Tirupur (North)(TN39)", "Mettupalayam(TN40)", "Pollachi(TN41)", "Tirupur (South)(TN42)", "Uthagamandalam(TN43)", "Tiruchirapalli(TN45)", "Perambalur(TN46)", "Karur(TN47)", "Srirangam (Tiruchirapalli)(TN48)", "Thanjavur(TN49)", "Tiruvarur(TN50)", "Nagapattinam(TN51)", "Sankagiri(TN52)", "Salem (East)(TN54)", "Pudukottai(TN55)", "Perundurai(TN56)", "Dindigul(TN57)", "Madurai (South)(TN58)", "Madurai (North)(TN59)", "Theni(TN60)", "Ariyalur(TN61)", "Sivagangai(TN63)", "Madurai (Central)(TN64)", "Ramanathapuram(TN65)", "Coimbatore (Central)(TN66)", "Virudhunagar(TN67)", "Kumbakonam(TN68)", "Tuticorin(TN69)", "Hosur(TN70)", "Tirunelveli(TN72)", "Ranipet(TN73)", "Nagercoil(TN74)", "Marthandam(TN75)", "Tenkasi(TN76)", "Attur(TN77)", "Dharapuram(TN78)", "State Transport Undertakings(TN/N, TN/AN)", "State Government Vehicles(TN/G, TN/AG)", "Agartala(TR01)", "Kailashahar(TR02)", "Udaipura(TR03)", "Almora(UK01)", "Bageshwar(UK02)", "Champawat(UK03)", "Nanital(UK04)", "Pithoragarh(UK05)", "Udham Singh Nagar(UK06)", "Dehra Dun (UK07TC for taxis)(UA07)", "Haridwar(UK08)", "Tehri(UK09)", "Uttarkashi(UK10)", "Chamoli(UK11)", "Pauri(UK12)", "Rudraprayag(UK13)", "Almora (not longer in use)(UP01)", "Haldwani (not longer in use�?)(UP02)", "Pithoragarh (not longer in use)(UP03)", "Udham Singh Nagar (not longer in use)(UP04)", "Chamoli (not longer in use)(UP05)", "Pauri (not longer in use)(UP06)", "Dehradun (not longer in use)(UP07)", "Tehri (not longer in use)(UP08)", "Uttarkashi (not longer in use)(UP09)", "Haridwar (not longer in use)(UP10)", "Saharanpur(UP11)", "Muzaffarnagar(UP12)", "Bulandshahr(UP13)", "Ghaziabad(UP14)", "Meerut (UP15AT for taxis, UP15AG for government vehicles(UP15)", "NOIDA / Gautam Buddha Nagar(UP16)", "Baghpat(UP17)", "Prabudh Nagar(UP18)", "Bijnor(UP20)", "Moradabad(UP21)", "Rampur(UP22)", "Jyotiba Phule Nagar(UP23)", "Badaun(UP24)", "Bareilly(UP25)", "Pilibhit(UP26)", "Shahjahanpur(UP27)", "Ayodhya(UP28)", "to be alloted(UP29)", "Hardoi(UP30)", "Kheri(UP31)", "Lucknow(UP32)", "Raebareli(UP33)", "Raebareli for commercial vehicles(UP33T, AT, BT, CT & so on)", "Raebareli for government vehicles(UP33G, AG, BG, CG & so on)", "Sitapur(UP34)", "Unnao(UP35)", "Unnao for commercial vehicles(UP35B, H, T)", "Lucknow (when UP32 will be exhausted)(UP36)", "Hapur(UP37)", "Bahraich(UP40)", "Barabanki(UP41)", "Faizabad(UP42)", "Gonda(UP43)", "Sultanpur(UP44)", "Ambedkar Nagar(UP45)", "Shrawasti(UP46)", "Balrampur(UP47)", "Azamgarh(UP50)", "Azamgarh for commercial vehicles(UP50T, AT, BT,& so on)", "Azamgarh for government vehicles(UP50, AG,BG & so on)", "Basti(UP51)", "Deoria(UP52)", "Gorakhpur for private vehicles(UP53)", "Gorakhpur for commercial vehicles(UP53T, AT, BT, CT & so on)", "Gorakhpur for government vehicles(UP53AG)", "Mau(UP54)", "Siddharth Nagar(UP55)", "Mahrajganj(UP56)", "Padrauna(UP57)", "Sant Kabir Nagar(UP58)", "to be alloted(UP59)", "Ballia(UP60)", "Ghazipur(UP61)", "Jaunpur(UP62)", "Jaunpur for taxis, private vehicle(UP62T)", "Mirzapur(UP63)", "Sonbhadra(UP64)", "Varanasi(UP65)", "Bhadohi(UP66)", "Chandauli(UP67)", "to be alloted(UP68)", "to be alloted(UP69)", "Allahabad(UP70)", "Fatehpur(UP71)", "Pratapgarh(UP72)", "Kaushambi(UP73)", "Kannauj(UP74)", "Etawah(UP75)", "Etawah for government vehicles(UP75G)", "Farrukhabad(UP76)", "Kanpur Dehat (rural)(UP77)", "Kanpur Urban(UP78)", "Kanpur Government Vehicles(UP78G, AG, BG, CG & so on)", "Kanpur CNG Vehicles(UP78AN, BN, CN & so on)", "Kanpur CNG Vehicles(UP78AT, BT, CT & so on)", "Auraiya(UP79)", "Agra(UP80)", "Aligarh(UP81)", "Etah(UP82)", "Firozabad(UP83)", "Mainpuri(UP84)", "Mathura(UP85)", "Mahamaya Nagar(UP86)", "Kanshiram Nagar(UP87)", "to be alloted(UP88)", "to be alloted(UP89)", "Banda(UP90)", "Hamirpur(UP91)", "Jalaun(UP92)", "Jhansi(UP93)", "Jhansi for public transport(UP93E)", "Jhansi for government vehicles(UP93AG)", "Lalitpur(UP94)", "Mahoba(UP95)", "Mahoba for commercial vehicles(UP95B)", "Mahoba for government vehicles(UP95G)", "Chitrakoot Dham (Karwi)(UP96)", "Kolkata (twowheelers) exhausted(WB01)", "Kolkata (private fourwheelers)(WB02)", "Kolkata (goods carriages)(WB03)", "Kolkata (passenger vehicles)(WB04)", "Kolkata (tractors, trailers, cranes)(WB05)", "Kolkata (private fourwheelers)(WB06)", "Kolkata (twowheelers)(WB07)", "Kolkata to be used(WB08)", "Kolkata to be used(WB09)", "Kolkata to be used(WB10)", "Howrah (transport vehicles)(WB11)", "Howrah (other than transport vehicles),(WB12)", "Howrah to be used(WB13)", "Howrah (other than transport vehicles) till WB14 K(WB14)", "Hooghly (transport vehicles)(WB15)", "Hooghly (other than transport vehicles) exhausted(WB16)", "Hooghly (other than transport vehicles)(WB18)", "South 24 Parganas, Alipore (transport vehicles)(WB19)", "South 24 Parganas, Alipore (other than transport vehicles) exhausted for twowheelers(WB20)", "South 24 Parganas, Alipore (other than transport vehicles)(WB22)", "Barrackpore (transport vehicles)(WB23)", "Barrackpore (other than transport vehicles)(WB24)", "Barasat (transport vehicles)(WB25)", "Barasat (other than transport vehicles)(WB26)", "Tamluk (transport vehicles)(WB29)", "Tamluk (other than transport vehicles)(WB30)", "Contai (transport vehicles)(WB31)", "Contai (other than transport vehicles)(WB32)", "Midnapur (transport vehicles)(WB33)", "Midnapur (other than transport vehicles)(WB34)", "Asansol (transport vehicles)(WB37)", "Asansol (other than transport vehicles)(WB38)", "Durgapur (transport vehicles)(WB39)", "Durgapur (other than transport vehicles)(WB40)", "Burdwan (transport vehicles)(WB41)", "Burdwan (other than transport vehicles)(WB42)", "Asansol (other than transport vehicles)(WB44)", "Nadia (transport vehicles)(WB51)", "Nadia (other than transport vehicles)(WB52)", "Birbhum (transport vehicles)(WB53)", "Birbhum (other than transport vehicles)(WB54)", "Purulia (transport vehicles)(WB55)", "Purulia (other than transport vehicles)(WB56)", "Murshidabad (transport vehicles)(WB57)", "Murshidabad (other than transport vehicles)(WB58)", "Raiganj (transport vehicles)(WB59)", "Raiganj (other than transport vehicles)(WB60)", "Balurghat (transport vehicles)(WB61)", "Balurghat (other than transport vehicles)(WB62)", "Cooch Behar (transport vehicles)(WB63)", "Cooch Behar (other than transport vehicles)(WB64)", "Malda (transport vehicles)(WB65)", "Malda (other than transport vehicles)(WB66)", "Bankura (transport vehicles)(WB67)", "Bankura (other than transport vehicles)(WB68)", "Alipurduar (transport vehicles)(WB69)", "Alipurduar (other than transport vehicles)(WB70)", "Jalpaiguri (transport vehicles)(WB71)", "Jalpaiguri (other than transport vehicles)(WB72)", "Siliguri (transport vehicles)(WB73)", "Siliguri (other than transport vehicles)(WB74)", "Darjeeling (transport vehicles)(WB76)", "Darjeeling (other than transport vehicles)(WB77)", "Kalimpong (transport vehicles)(WB78)", "Kalimpong (other than transport vehicles)(WB79)"];
+
+
+autocomplete(document.getElementById("rto"), rtodetails);
+
+</script>
